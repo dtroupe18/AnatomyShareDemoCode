@@ -1,6 +1,6 @@
 # AnatomyShare is an iPhone / iPad application that promotes collaborative learning in the medical school gross anatomy dissection laboratory. 
 
-I posted some of the code from AnatomyShare here for people to see. 
+I posted some of the code from AnatomyShare here for people to see since the real repository is private.
 
 iOS application to be used as a collaborative, information-sharing tool in the gross anatomy lab for medical students at Robert Wood Johnson Medical School. 
 
