@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Anu-op-7Hp">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In-->
+        <scene sceneID="IDe-n9-gHy">
+            <objects>
+                <viewController storyboardIdentifier="loginVC" id="ndP-uj-q4b" customClass="LoginViewController" customModule="AnatomyShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jps-vj-gRI"/>
+                        <viewControllerLayoutGuide type="bottom" id="VJP-27-bge"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UJi-YQ-ATD">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Wda-0P-dMg">
+                                <rect key="frame" x="10" y="40" width="814" height="369"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AnatomyShareLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8yH-3g-DT9">
+                                        <rect key="frame" x="122" y="0.0" width="570" height="135"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9pd-qg-FNG">
+                                        <rect key="frame" x="122" y="143" width="570" height="82"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ejt-Mb-U3f">
+                                                <rect key="frame" x="0.0" y="0.0" width="570" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="d2w-Ew-EWo"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZHk-zp-COb">
+                                                <rect key="frame" x="0.0" y="42" width="570" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="LMV-0Q-10i"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ejt-Mb-U3f" firstAttribute="width" secondItem="9pd-qg-FNG" secondAttribute="width" id="ICO-sp-Jme"/>
+                                            <constraint firstItem="ZHk-zp-COb" firstAttribute="width" secondItem="9pd-qg-FNG" secondAttribute="width" id="iSA-Qq-Kdm"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5P-58-xbt">
+                                        <rect key="frame" x="122" y="233" width="570" height="40"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="KXn-eW-kXG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="ndP-uj-q4b" eventType="touchUpInside" id="bG0-ge-cso"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if4-kv-9fQ">
+                                        <rect key="frame" x="122" y="281" width="570" height="40"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="axa-gs-0Sb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Forgot Password?">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgotPasswordPressed:" destination="ndP-uj-q4b" eventType="touchUpInside" id="EQg-m3-mii"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1C-Xx-72P">
+                                        <rect key="frame" x="122" y="329" width="570" height="40"/>
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ikl-em-a4e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUpPressed:" destination="ndP-uj-q4b" eventType="touchUpInside" id="FjI-gG-hLG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="s5P-58-xbt" firstAttribute="width" secondItem="Wda-0P-dMg" secondAttribute="width" multiplier="0.7" id="9a1-Tu-USN"/>
+                                    <constraint firstItem="h1C-Xx-72P" firstAttribute="width" secondItem="Wda-0P-dMg" secondAttribute="width" multiplier="0.7" id="CcW-Mb-y1b"/>
+                                    <constraint firstItem="9pd-qg-FNG" firstAttribute="top" secondItem="8yH-3g-DT9" secondAttribute="bottom" constant="8" id="TV4-D8-Faq"/>
+                                    <constraint firstItem="9pd-qg-FNG" firstAttribute="width" secondItem="Wda-0P-dMg" secondAttribute="width" multiplier="0.7" id="VoD-Dl-P3Y"/>
+                                    <constraint firstItem="if4-kv-9fQ" firstAttribute="width" secondItem="9pd-qg-FNG" secondAttribute="width" id="XwY-qV-dIU"/>
+                                    <constraint firstItem="8yH-3g-DT9" firstAttribute="width" secondItem="Ejt-Mb-U3f" secondAttribute="width" id="YrM-gM-2zs"/>
+                                    <constraint firstItem="s5P-58-xbt" firstAttribute="top" secondItem="9pd-qg-FNG" secondAttribute="bottom" constant="8" id="cB6-c8-FSA"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOy-Wv-trx">
+                                <rect key="frame" x="315" y="1009" width="205" height="40"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="205" id="Upl-dS-kqM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Vy3-Ev-Jw9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Want more information? ">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreInformationPressed:" destination="ndP-uj-q4b" eventType="touchUpInside" id="h64-2W-5T4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLL-pn-bgJ">
+                                <rect key="frame" x="315" y="1059" width="205" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Privacy Policy">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="privacyPolicyPressed:" destination="ndP-uj-q4b" eventType="touchUpInside" id="BnP-29-CM2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wda-0P-dMg" secondAttribute="trailing" constant="10" id="0rK-Fj-CmF"/>
+                            <constraint firstItem="VJP-27-bge" firstAttribute="top" secondItem="zLL-pn-bgJ" secondAttribute="bottom" constant="20" id="1A0-lL-VVv"/>
+                            <constraint firstItem="Wda-0P-dMg" firstAttribute="leading" secondItem="UJi-YQ-ATD" secondAttribute="leading" constant="10" id="VSt-pO-rMt"/>
+                            <constraint firstItem="Wda-0P-dMg" firstAttribute="top" secondItem="jps-vj-gRI" secondAttribute="bottom" constant="20" id="XSe-dp-NDW"/>
+                            <constraint firstItem="kOy-Wv-trx" firstAttribute="centerX" secondItem="UJi-YQ-ATD" secondAttribute="centerX" id="bje-RX-CzC"/>
+                            <constraint firstItem="zLL-pn-bgJ" firstAttribute="centerX" secondItem="UJi-YQ-ATD" secondAttribute="centerX" id="dPU-4o-gux"/>
+                            <constraint firstItem="zLL-pn-bgJ" firstAttribute="width" secondItem="kOy-Wv-trx" secondAttribute="width" id="gyP-GS-3Pj"/>
+                            <constraint firstItem="zLL-pn-bgJ" firstAttribute="top" secondItem="kOy-Wv-trx" secondAttribute="bottom" constant="10" id="tXb-EB-u7B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign In" id="dKR-F7-kqS"/>
+                    <connections>
+                        <outlet property="emailField" destination="Ejt-Mb-U3f" id="ngq-4u-OaD"/>
+                        <outlet property="forgotPasswordButton" destination="if4-kv-9fQ" id="YGA-9s-48g"/>
+                        <outlet property="loginButton" destination="s5P-58-xbt" id="wHa-0U-awC"/>
+                        <outlet property="moreInformationButton" destination="kOy-Wv-trx" id="bv4-o8-XtP"/>
+                        <outlet property="passwordField" destination="ZHk-zp-COb" id="uul-2q-eor"/>
+                        <outlet property="privacyPolicyButton" destination="zLL-pn-bgJ" id="xIG-Sp-uMi"/>
+                        <outlet property="signupButton" destination="h1C-Xx-72P" id="azX-oA-BiY"/>
+                        <segue destination="w18-Tq-TDO" kind="show" identifier="toSignUp" id="CJe-sf-SCk"/>
+                        <segue destination="gMR-X2-stH" kind="show" identifier="toEULA" id="xiY-tS-eac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obC-MH-YSO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.1366906474821" y="137.05035971223023"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KAj-Tx-cxj">
+            <objects>
+                <viewController id="gMR-X2-stH" customClass="EULAViewController" customModule="AnatomyShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ki4-0l-u6Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="vJ6-HG-cAF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FFY-cD-oVB">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-fJ-Fwd">
+                                <rect key="frame" x="30" y="30" width="774" height="984"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">AnatomyShare End-User License Agreement 
+Last updated: October 1, 2017
+
+
+AnatomyShare App End User License Agreement
+This End User License Agreement (“Agreement”) is between you and AnatomyShare and governs use of this app made available through the Apple App Store. By installing the AnatomyShare App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content or abusive users. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the AnatomyShare App.&lt;
+
+In order to ensure AnatomyShare provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the "Report" feature found on each post.
+
+1. Parties This Agreement is between you and AnatomyShare only, and not Apple, Inc. (“Apple”). Notwithstanding the foregoing, you acknowledge that Apple and its subsidiaries are third party beneficiaries of this Agreement and Apple has the right to enforce this Agreement against you. AnatomyShare, not Apple, is solely responsible for the AnatomyShare App and its content.
+
+2. Privacy AnatomyShare may collect and use information about your usage of the AnatomyShare App, including certain types of information from and about your device. AnatomyShare may use this information, as long as it is in a form that does not personally identify you, to measure the use and performance of the AnatomyShare App.
+
+3. Limited License AnatomyShare grants you a limited, non-exclusive, non-transferable, revocable license to use theAnatomyShare App for your personal, non-commercial purposes. You may only use the AnatomyShare App on Apple devices that you own or control and as permitted by the App Store Terms of Service.
+
+4. Age Restrictions By using the AnatomyShare App, you represent and warrant that (a) you are 17 years of age or older and you agree to be bound by this Agreement; (b) if you are under 17 years of age, you have obtained verifiable consent from a parent or legal guardian; and (c) your use of the AnatomyShare App does not violate any applicable law or regulation. Your access to the AnatomyShare App may be terminated without warning if AnatomyShare believes, in its sole discretion, that you are under the age of 17 years and have not obtained verifiable consent from a parent or legal guardian. If you are a parent or legal guardian and you provide your consent to your child's use of the AnatomyShare App, you agree to be bound by this Agreement in respect to your child's use of the AnatomyShare App.
+
+5. Objectionable Content Policy Content may not be submitted to AnatomyShare, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.
+
+6. Warranty AnatomyShare disclaims all warranties about the AnatomyShare App to the fullest extent permitted by law. To the extent any warranty exists under law that cannot be disclaimed, AnatomyShare, not Apple, shall be solely responsible for such warranty.
+
+7. Maintenance and Support AnatomyShare does provide minimal maintenance or support for it but not to the extent that any maintenance or support is required by applicable law, AnatomyShare, not Apple, shall be obligated to furnish any such maintenance or support.
+
+8. Product Claims AnatomyShare, not Apple, is responsible for addressing any claims by you relating to the AnatomyShare App or use of it, including, but not limited to: (i) any product liability claim; (ii) any claim that the AnatomyShare App fails to conform to any applicable legal or regulatory requirement; and (iii) any claim arising under consumer protection or similar legislation. Nothing in this Agreement shall be deemed an admission that you may have such claims.
+
+9. Third Party Intellectual Property Claims AnatomyShare shall not be obligated to indemnify or defend you with respect to any third party claim arising out or relating to the AnatomyShareApp. To the extent AnatomyShare is required to provide indemnification by applicable law, AnatomyShare, not Apple, shall be solely responsible for the investigation, defense, settlement and discharge of any claim that the AnatomyShare App or your use of it infringes any third party intellectual property right.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="yTI-6d-3qp">
+                                <rect key="frame" x="286.5" y="1034" width="261" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXH-fE-NBS">
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Decline">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="disagreePressed:" destination="gMR-X2-stH" eventType="touchUpInside" id="BId-Rq-TJa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGA-i5-Kmw">
+                                        <rect key="frame" x="207" y="0.0" width="54" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Accept"/>
+                                        <connections>
+                                            <action selector="agreePressed:" destination="gMR-X2-stH" eventType="touchUpInside" id="lzE-7Z-NeV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mMk-fJ-Fwd" firstAttribute="top" secondItem="ki4-0l-u6Y" secondAttribute="bottom" constant="10" id="7DG-Mv-go0"/>
+                            <constraint firstItem="yTI-6d-3qp" firstAttribute="top" secondItem="mMk-fJ-Fwd" secondAttribute="bottom" constant="20" id="K0a-6A-3qL"/>
+                            <constraint firstItem="mMk-fJ-Fwd" firstAttribute="leading" secondItem="FFY-cD-oVB" secondAttribute="leadingMargin" constant="10" id="KeT-Eb-YLA"/>
+                            <constraint firstItem="yTI-6d-3qp" firstAttribute="centerX" secondItem="FFY-cD-oVB" secondAttribute="centerX" id="cE2-8B-UEW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mMk-fJ-Fwd" secondAttribute="trailing" constant="10" id="jfy-Nd-1fx"/>
+                            <constraint firstItem="vJ6-HG-cAF" firstAttribute="top" secondItem="yTI-6d-3qp" secondAttribute="bottom" constant="45" id="x6p-LR-uMP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="agreeButton" destination="VGA-i5-Kmw" id="yjX-jN-veU"/>
+                        <outlet property="declineButton" destination="yXH-fE-NBS" id="l3n-np-Egm"/>
+                        <outlet property="textView" destination="mMk-fJ-Fwd" id="KeW-XM-f4X"/>
+                        <segue destination="ndP-uj-q4b" kind="show" identifier="toLogin" id="hHM-YB-zsF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xXR-IP-xaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="1479"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="a75-ix-yOq">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="w18-Tq-TDO" customClass="SignUpViewController" customModule="AnatomyShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vW9-1E-B7U"/>
+                        <viewControllerLayoutGuide type="bottom" id="sHA-Hx-gHZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aTI-iP-6Ka">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Cp-eA-EnU">
+                                <rect key="frame" x="125" y="45" width="584" height="163"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tk6-QT-cyE">
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lBD-9F-fpH"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Display Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iKw-Mn-ewJ">
+                                        <rect key="frame" x="0.0" y="41" width="584" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Yfa-6W-MHl"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m0O-tH-Bas">
+                                        <rect key="frame" x="0.0" y="82" width="584" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="f1K-Zg-Wbd"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l3h-NW-nJk">
+                                        <rect key="frame" x="0.0" y="123" width="584" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1F1-QS-buY"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Fqn-uw-ug5">
+                                <rect key="frame" x="125" y="216" width="584" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zt-DT-dei">
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="30"/>
+                                        <state key="normal" title="Select Picture">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectImagePressed:" destination="w18-Tq-TDO" eventType="touchUpInside" id="Urk-ef-9Gb"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6u-gb-XKC">
+                                        <rect key="frame" x="-125" y="0.0" width="0.0" height="30"/>
+                                        <state key="normal" title="Finish">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextPressed:" destination="w18-Tq-TDO" eventType="touchUpInside" id="DmJ-1O-NXa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dVx-VD-KLn">
+                                <rect key="frame" x="317" y="271" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="T0o-mM-x49"/>
+                                    <constraint firstAttribute="height" constant="200" id="ndD-fB-V8t"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Cp-eA-EnU" firstAttribute="width" secondItem="aTI-iP-6Ka" secondAttribute="width" multiplier="0.7" id="Mmo-39-gXC"/>
+                            <constraint firstItem="5Cp-eA-EnU" firstAttribute="top" secondItem="vW9-1E-B7U" secondAttribute="bottom" constant="25" id="P2C-o5-Kf9"/>
+                            <constraint firstItem="Fqn-uw-ug5" firstAttribute="top" secondItem="5Cp-eA-EnU" secondAttribute="bottom" constant="8" id="Ykt-ex-3Tk"/>
+                            <constraint firstItem="dVx-VD-KLn" firstAttribute="top" secondItem="Fqn-uw-ug5" secondAttribute="bottom" constant="25" id="a7a-3F-Y4j"/>
+                            <constraint firstItem="Fqn-uw-ug5" firstAttribute="width" secondItem="aTI-iP-6Ka" secondAttribute="width" multiplier="0.7" id="dtW-84-oxz"/>
+                            <constraint firstItem="Fqn-uw-ug5" firstAttribute="centerX" secondItem="aTI-iP-6Ka" secondAttribute="centerX" id="hRF-Gt-hZy"/>
+                            <constraint firstItem="5Cp-eA-EnU" firstAttribute="centerX" secondItem="aTI-iP-6Ka" secondAttribute="centerX" id="j5X-LM-ecB"/>
+                            <constraint firstItem="dVx-VD-KLn" firstAttribute="centerX" secondItem="aTI-iP-6Ka" secondAttribute="centerX" id="vRF-fP-aME"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="bb1-Zn-F5Z"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="confirmPassword" destination="l3h-NW-nJk" id="M7f-36-ZKV"/>
+                        <outlet property="emailField" destination="Tk6-QT-cyE" id="Ede-m9-LsB"/>
+                        <outlet property="imageView" destination="dVx-VD-KLn" id="Sei-LP-Oir"/>
+                        <outlet property="imageViewHeight" destination="ndD-fB-V8t" id="rRq-GC-kyh"/>
+                        <outlet property="imageViewWidth" destination="T0o-mM-x49" id="KlA-Me-UIH"/>
+                        <outlet property="nameField" destination="iKw-Mn-ewJ" id="DeR-VW-3ip"/>
+                        <outlet property="nextButton" destination="U6u-gb-XKC" id="tqp-kI-Glk"/>
+                        <outlet property="password" destination="m0O-tH-Bas" id="xMb-cM-zdQ"/>
+                        <outlet property="selectPictureButton" destination="8Zt-DT-dei" id="SPH-nd-alN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUL-3Z-aA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958.59375" y="139.453125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="572-te-5hk">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Anu-op-7Hp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="igJ-tL-UHg">
+                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ndP-uj-q4b" kind="relationship" relationship="rootViewController" id="Q36-D4-EZO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgt-cj-bou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AnatomyShareLogo" width="455" height="135"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hHM-YB-zsF"/>
+    </inferredMetricsTieBreakers>
+</document>

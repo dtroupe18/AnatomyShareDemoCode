@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Draft" representedClassName="Draft" syncable="YES" codeGenerationType="class">
+        <attribute name="annotatedImageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="folderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originalImageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="table" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textFive" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textFour" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textOne" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textThree" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="textTwo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Draft" positionX="-63" positionY="-18" width="128" height="225"/>
+    </elements>
+</model>
