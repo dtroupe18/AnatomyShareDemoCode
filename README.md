@@ -6,6 +6,7 @@ iOS application to be used as a collaborative, information-sharing tool in the g
 
 ## Students can use AntaomyShare to:
   1. Post anatomical photos from their cadaveric dissections to be shared with their classmates.
+    1.1 Posts can be annotated (drawings and text can be added).
   2. Comment or like any post.
   3. Access all of their posts, posts they have commented on, and posts they have liked.
   4. Sort posted information by individual cadaver, anatomical region, or category.
@@ -17,5 +18,10 @@ iOS application to be used as a collaborative, information-sharing tool in the g
   3. Algolia search provides real-time searching of all posts so that students can easily locate the information they are looking for. 
   4. Xcode, TestFlight, and iTunes Connect. 
 
+
+## Sample Video
+For obvious reasons I am not using the real anatomical images.
+
+![Alt Text](https://github.com/dtroupe18/AnatomyShareDemoCode/blob/master/SampleVideo.gif)
 
 
