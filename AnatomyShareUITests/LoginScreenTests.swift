@@ -85,7 +85,7 @@ class LoginScreenTests: XCTestCase {
         
         let passwordSecureTextField = app.secureTextFields[" Password"]
         passwordSecureTextField.tap()
-        passwordSecureTextField.typeText("password")
+        passwordSecureTextField.typeText("FakePassword")
         app.buttons["Log In"].tap()
         
         // Ensure that we got an error message
