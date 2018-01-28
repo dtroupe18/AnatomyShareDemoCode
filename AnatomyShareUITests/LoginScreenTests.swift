@@ -50,7 +50,7 @@ class LoginScreenTests: XCTestCase {
         
         let passwordSecureTextField = app.secureTextFields[" Password"]
         passwordSecureTextField.tap()
-        passwordSecureTextField.typeText("password")
+        passwordSecureTextField.typeText("ApplePassword")
         app.buttons["Log In"].tap()
         
         // Need to have a delay here so there is time for the
